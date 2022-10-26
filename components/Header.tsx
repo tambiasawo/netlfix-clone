@@ -3,7 +3,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications'
 import SearchIcon from '@mui/icons-material/Search'
 import Link from 'next/link'
 import useAuth from '../hooks/useAuth'
-
+import Tooltip from '@mui/material/Tooltip'
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const { logout, loading } = useAuth()
@@ -42,13 +42,16 @@ const Header = () => {
         <SearchIcon className="hidden h-6 w-6 md:flex" />
         <p className="hidden lg:flex">Kids</p>
         <NotificationsIcon />
+
         <Link href="/account">
-          <img
-            onClick={logout}
-            src="https://rb.gy/g1pwyx"
-            alt=""
-            className="cursor-pointer rounded"
-          />
+          <Tooltip title="Logout">
+            <img
+              onClick={logout}
+              src="https://rb.gy/g1pwyx"
+              alt=""
+              className="cursor-pointer rounded"
+            />
+          </Tooltip>
         </Link>
       </div>
     </header>
