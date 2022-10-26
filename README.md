@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS + Typescript Example
+# Next.js + Tailwind CSS + Typescript
 
 This code uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js and Typescript. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
@@ -12,6 +12,7 @@ This app is still in development and new features will continually be added unti
 ## Use app locally 
 - Clone or download this repo to your local machine
 - run npm install or yarn install
+- Go to https://www.themoviedb.org and create an account
+- create a .env.local file in the project folder and paste your api key in here 
 - run npm run dev
-- and your app is up and running
 
