@@ -1,6 +1,6 @@
 # Next.js + Tailwind CSS + Typescript
 
-This code uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js and Typescript. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This app uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js and Typescript. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
 ## How to use
 Simply click on the demo link and you will be redirected to the app web link hosted via Vercel. See below on how to sign in
