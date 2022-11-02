@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [loading, setLoading] = useState(false)
   const [user, setUser] = React.useState<User | null>()
   const [error, setError] = useState(null)
-  const [initialLoading, setInitialLoading] = useState(false)
+  const [initialLoading, setInitialLoading] = useState(true)
 
   //to make the user persist on page refresh
   useEffect(() => {

@@ -6,9 +6,11 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import { Info } from '@mui/icons-material/'
 import { useRecoilState } from 'recoil'
 import { modalState, movieState } from '../atom/modalAtom'
+
 interface Props {
   netflixOriginals: Movie[]
 }
+
 const Banner = ({ netflixOriginals }: Props) => {
   const [randomMovie, setRandomMovie] = React.useState<Movie | null>(null)
   const [showModal, setShowModal] = useRecoilState(modalState)
@@ -39,7 +41,11 @@ const Banner = ({ netflixOriginals }: Props) => {
       </p>
       <div className="flex space-x-4">
         <button className="bannerButton bg-white text-black">
-          <PlayArrowIcon className="h-4 w-4 text-black md:h-7 md:w-7" /> Play
+          <PlayArrowIcon
+            fontSize="large"
+            className="h-4 w-4 text-black md:h-7 md:w-7"
+          />{' '}
+          Play
         </button>
         <button
           className="bannerButton bg-[gray]/70 text-white"

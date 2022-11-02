@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useForm, SubmitHandler } from 'react-hook-form'
-
 import React from 'react'
 import useAuth from '../hooks/useAuth'
 interface Inputs {
@@ -43,6 +42,7 @@ function login() {
         width={150}
         height={150}
       />
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="relative mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0 md:max-w-md md:px-14"
@@ -91,7 +91,7 @@ function login() {
             Sign Up Now
           </button>
         </div>
-      </form>{' '}
+      </form>
     </div>
   )
 }
