@@ -9,7 +9,7 @@ import { useRecoilValue } from 'recoil'
 import { modalState } from '../atom/modalAtom'
 import Modal from '../components/Modal'
 import useAuth from '../hooks/useAuth'
-import CircularProgress from '@mui/material/CircularProgress'
+import Plans from '../components/Plans'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -36,8 +36,15 @@ const Home = ({
 }: Props) => {
   const showModal = useRecoilValue(modalState)
   const { loading } = useAuth()
-  if (loading) return null
+  const subscription = false
+  //if (loading || subscription === null) return null
 
+  /* if (!subscription)
+    return (
+      <div>
+        <Plans />
+      </div>
+    ) */
   return (
     <div
       className={`relative h-screen bg-gradient-to-b lg:h-[140vh] ${

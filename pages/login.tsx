@@ -17,11 +17,11 @@ function login() {
     formState: { errors },
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = async ({ email, password }) => {
-    /*  if (login) {
+    if (login) {
       await signIn(email, password)
     } else {
       await signUp(email, password)
-    } */
+    }
   }
 
   return (
