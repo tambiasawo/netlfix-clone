@@ -10,7 +10,8 @@ import { modalState } from '../atom/modalAtom'
 import Modal from '../components/Modal'
 import useAuth from '../hooks/useAuth'
 import Plans from '../components/Plans'
-
+import Alert from '@mui/material/Alert'
+import AlertTitle from '@mui/material/AlertTitle'
 interface Props {
   netflixOriginals: Movie[]
   sample: Movie[]
@@ -70,6 +71,11 @@ const Home = ({
           <Row title="Romance Movies" movies={romanceMovies} />
           <Row title="Documentaries" movies={documentaries} />
         </section>
+        <div className="fixed bottom-0 left-0 right-0">
+          <Alert severity="warning" sx={{ textAlign: 'center' }}>
+            <AlertTitle>App is still under development</AlertTitle>
+          </Alert>
+        </div>
       </main>
       {showModal && <Modal />}
     </div>
