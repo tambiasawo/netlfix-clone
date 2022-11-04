@@ -54,6 +54,7 @@ function login() {
               type="email"
               placeholder="Email"
               className="input"
+              value="test@test.com"
               {...register('email', { required: true })}
             />
             {errors.email && (
@@ -67,6 +68,7 @@ function login() {
               type="password"
               placeholder="password"
               className="input"
+              value="123456"
               {...register('password', { required: true })}
             />
             {errors.password && (
